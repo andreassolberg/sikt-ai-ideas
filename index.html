@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Accordion</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+
+</head>
+<body>
+
+<!-- Template for an accordion item -->
+<script type="text/template" id="accordion-template">
+  <button class="accordion">{title}
+  <div class="desc">{desc}</div>
+  </button>
+  <div class="panel">
+    <div class="idea">
+        {ideas}
+    </div>
+    <div class="body">{body}</div>
+
+  </div>
+</script>
+
+
+
+<h2>Sikt KI ideer</h2>
+
+
+
+<!-- Container where the accordion will be -->
+<div id="accordion-container"></div>
+
+<script src="script.js"></script> <!-- Externalize your JavaScript for cleaner structure -->
+
+
+</body>
+</html>
